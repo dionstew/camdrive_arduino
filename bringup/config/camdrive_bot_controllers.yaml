@@ -1,0 +1,12 @@
+controller_manager:
+  ros_parameter:
+    update_rate: 30  #Hz
+    camdrive_cont:
+      type: camdrive_arduino/CamDriveArduino
+      device: /dev/ttyUSB0
+      baudrate: 57600
+      timeout: 100
+      enc_counts_per_rev: 400
+      loop_rate: 30
+      left_wheel_name: "left_wheel_joint"
+      right_wheel_name: "right_wheel_joint"
